@@ -1,0 +1,14 @@
+<input
+  type="text"
+  [ngStyle]="{ color: 'red', 'font-weight': '800' }"
+  [(ngModel)]="firstname"
+  placeholder="Type Here"
+/><br /><br />
+<h1 [ngStyle]="{ color: 'blue', 'font-weight': '800' }">{{ firstname }}</h1>
+<br /><br />
+<input
+  type="text"
+  [ngStyle]="{ color: 'green', 'font-weight': '800' }"
+  value="{{ firstname }}"
+  placeholder="Type Here"
+/>

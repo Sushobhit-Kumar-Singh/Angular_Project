@@ -1,0 +1,25 @@
+<div class="container mt-3 mb-5"></div>
+<div class="table-responsive"></div>
+
+<table class="table">
+  <thead class="thead-dark bg-dark text-light">
+    <tr>
+      <th>Prod. Id</th>
+      <th>Prod. Name</th>
+      <th>Prod. Price</th>
+      <th>Prod. Description</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let prod of products">
+      <tr>
+        <td>{{ prod.pid }}</td>
+        <td>{{ prod.pName }}</td>
+        <td>{{ prod.price }}</td>
+        <td>{{ prod.description }}</td>
+        <td><img src="{{ prod.imgUrl }}" alt="" /></td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
